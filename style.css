@@ -3,18 +3,22 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+.main{
+    position: relative;
+}
 .box{
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: #DD3C54;
-  height: 300px;
-  text-align: center;
-  width: 300px;
+  height: 500px;
+  width: 500px;
 }
 
-/* .box img{
-    width: 400px;
-} */
+.box img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
