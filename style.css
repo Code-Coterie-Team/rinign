@@ -1,24 +1,56 @@
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 .main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
     position: relative;
 }
+
 .box{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: #DD3C54;
-  height: 500px;
-  width: 500px;
+    background-color: #DD3C54;
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    left: 40%;
+    top: 25%;
 }
+
 
 .box img{
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    top: 35%;
+    left: 34%;
+    transform: translate(-50% , -50%);
+    animation: shake  4s infinite;
 }
+
+
+
+
+
+
+
+  @keyframes shake {
+    0%, 50%, 100% {
+        transform: rotate(0);
+    }
+    5%, 10%, 15%, 20%, 25%, 30%, 35%, 40% {
+        transform: rotate(6deg);
+    } 
+    45% {
+        transform: rotate(4deg);
+    } 
+    7.5%, 12.5%, 17.5%, 22.5%, 27.5%, 32.5%, 37.5%, 42.5% {
+        transform: rotate(-6deg);
+    }
+    47.5% {
+        transform: rotate(-2deg);
+    }
+}  
