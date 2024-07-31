@@ -32,6 +32,16 @@
 }
 
 
+.curved-line {
+    position: relative;
+    width: 3px;
+    height: 100px;
+    top: 35%;
+    left: 40%;
+    background: black;
+    border-radius: 40%;
+}
+
 
 
 
