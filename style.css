@@ -23,7 +23,7 @@ body{
          height: 400px;
          margin-top: -200px;
          margin-left: -200px;
-          border-radius: 2px;
+         border-radius: 2px;
          box-shadow: 1px 2px 10px 0px rgba(0,0,0,0.3);
          overflow: hidden;
          background: #DD3C54;
@@ -35,12 +35,11 @@ body{
                 left: 175px;
                 fill: #fff;
                 transform-origin: 50% 0;
-                animation: shake  ease infinite;
+                animation: move  ease infinite;
             }
 
         /* Set property to line */
         .line {
-            animation-name: line-1;
             fill: none;
             stroke: #fff;
             stroke-width: 1.2;
@@ -112,35 +111,37 @@ body{
             }
         }
 
-@keyframes line-5 {
-	0%,19%{
-		opacity: 0;
-	}
-	20% {
-		transform: translate3d(0,0,0) scale(1);
-		opacity: 1;
-	}
-	70%, 100% {
-		transform: translate3d(-60px,0,0) scale(2);
-		opacity: 0;
-	}
-}
+        @keyframes line-5 {
+            0%,19%{
+                opacity: 0;
+            }
+            20% {
+                transform: translate3d(0,0,0) scale(1);
+                opacity: 1;
+            }
+            70%, 100% {
+                transform: translate3d(-60px,0,0) scale(2);
+                opacity: 0;
+            }
+        }
 
-@keyframes line-6 {
-	0%,39% {
-		opacity: 0;
-	}
-	40% {
-		transform: translate3d(0,0,0) scale(1);
-		opacity: 1;
-	}
-	90%, 100% {
-		transform: translate3d(-60px,0,0) scale(2);
-		opacity: 0;
-	}
-}
+            @keyframes line-6 {
+                0%,39% {
+                    opacity: 0;
+                }
+                40% {
+                    transform: translate3d(0,0,0) scale(1);
+                    opacity: 1;
+                }
+                90%, 100% {
+                    transform: translate3d(-60px,0,0) scale(2);
+                    opacity: 0;
+                }
+            }
 
-@keyframes shake {
+            /* Set Animation move */
+
+@keyframes move {
 	0%, 50%, 100% {
 		transform: rotate(0);
 	}
